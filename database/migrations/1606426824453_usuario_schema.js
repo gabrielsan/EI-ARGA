@@ -11,10 +11,10 @@ class UsuarioSchema extends Schema {
       table.string('email',90).notNullable().unique()
       table.string('cpf',11).notNullable().unique()
       table
-      .integer("minha_contas")
+      .integer("minha_conta")
       .unsigned()
       .references("id")
-      .inTable("minha_contas")
+      .inTable("minha_conta")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
