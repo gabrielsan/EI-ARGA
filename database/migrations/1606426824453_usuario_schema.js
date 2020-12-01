@@ -6,23 +6,23 @@ const Schema = use('Schema')
 class UsuarioSchema extends Schema {
   up () {
     this.create('usuarios', (table) => {
-      table.increments('id_usuarios')
+      table.increments()
       table.string('nome',90).notNullable().unique()
       table.string('email',90).notNullable().unique()
       table.string('cpf',11).notNullable().unique()
       table
-      .integer("id_minhaconta")
+      .integer("minha_conta")
       .unsigned()
       .references("id")
-      .inTable("id_minhaconta")
+      .inTable("minha_conta")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
       table
-      .integer("id_time")
+      .integer("qualseutime")
       .unsigned()
       .references("id")
-      .inTable("id_time")
+      .inTable("qualseutime")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
