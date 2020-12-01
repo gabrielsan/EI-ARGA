@@ -11,13 +11,6 @@ class MinhaContaSchema extends Schema {
       table.string('senha',50).notNullable().unique()
       table.timestamps()
       table
-      .integer("usuario")
-      .unsigned()
-      .references("id")
-      .inTable("usuario")
-      .onUpdate("cascade")
-      .onDelete("cascade")
-      .notNullable();
     })
   }
 
