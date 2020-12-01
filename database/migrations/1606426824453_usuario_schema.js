@@ -6,12 +6,12 @@ const Schema = use('Schema')
 class UsuarioSchema extends Schema {
   up () {
     this.create('usuarios', (table) => {
-      table.increments()
+      table.increments('id_usuarios')
       table.string('nome',90).notNullable().unique()
       table.string('email',90).notNullable().unique()
       table.string('cpf',11).notNullable().unique()
       table
-      .integer("minha_conta_id")
+      .integer("id_minhaconta")
       .unsigned()
       .references("id")
       .inTable("minha_conta")
@@ -19,10 +19,10 @@ class UsuarioSchema extends Schema {
       .onDelete("cascade")
       .notNullable();
       table
-      .integer("qualseutime_id")
+      .integer("id_time")
       .unsigned()
       .references("id")
-      .inTable("qual_seu_time")
+      .inTable("qualseutime")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
