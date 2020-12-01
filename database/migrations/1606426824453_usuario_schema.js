@@ -13,8 +13,8 @@ class UsuarioSchema extends Schema {
       table
       .integer("id_minhaconta")
       .unsigned()
-      .references("id_minhaconta")
-      .inTable("minha_conta")
+      .references("id")
+      .inTable("id_minhaconta")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
