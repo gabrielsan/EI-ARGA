@@ -14,7 +14,7 @@ class CadastrarnoticiaSchema extends Schema {
       table
       .integer("qualseutime")
       .unsigned()
-      .references("id")
+      .references("id_usuario")
       .inTable("qualseutime")
       .onUpdate("cascade")
       .onDelete("cascade")
