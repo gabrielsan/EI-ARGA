@@ -22,7 +22,7 @@ class UsuarioSchema extends Schema {
       .integer("id_time")
       .unsigned()
       .references("id")
-      .inTable("qualseutime")
+      .inTable("id_time")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
