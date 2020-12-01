@@ -11,7 +11,7 @@ class QualseutimeSchema extends Schema {
       table.timestamps()
     })
   }
-
+  
   down () {
     this.drop('qualseutimes')
   }
