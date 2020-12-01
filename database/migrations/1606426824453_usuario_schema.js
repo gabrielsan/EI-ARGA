@@ -19,10 +19,10 @@ class UsuarioSchema extends Schema {
       .onDelete("cascade")
       .notNullable();
       table
-      .integer("id_qualseutime")
+      .integer("id_qual_seu_time")
       .unsigned()
       .references("id")
-      .inTable("qualseutime")
+      .inTable("id_qual_seu_time")
       .onUpdate("cascade")
       .onDelete("cascade")
       .notNullable();
