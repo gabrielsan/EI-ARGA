@@ -12,7 +12,7 @@ class CadastrarnoticiaSchema extends Schema {
       table.string('descrição',50).notNullable().unique()
       table.string('noticia',300).notNullable().unique()
       table
-      .integer("qualseutime")
+      .integer("qualseutime_id")
       .unsigned()
       .references("usuario")
       .inTable("qualseutime")

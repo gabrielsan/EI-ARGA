@@ -11,7 +11,7 @@ class UsuarioSchema extends Schema {
       table.string('email',90).notNullable().unique()
       table.string('cpf',11).notNullable().unique()
       table
-      .integer("minha_conta")
+      .integer("minha_conta_id")
       .unsigned()
       .references("id")
       .inTable("minha_conta")
@@ -19,7 +19,7 @@ class UsuarioSchema extends Schema {
       .onDelete("cascade")
       .notNullable();
       table
-      .integer("qual_seu_time")
+      .integer("qualseutime_id")
       .unsigned()
       .references("id")
       .inTable("qual_seu_time")
