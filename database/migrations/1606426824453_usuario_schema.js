@@ -13,7 +13,7 @@ class UsuarioSchema extends Schema {
       table
       .integer("minha_conta")
       .unsigned()
-      .references("id")
+      .references("id_minha_conta")
       .inTable("minha_conta")
       .onUpdate("cascade")
       .onDelete("cascade")
