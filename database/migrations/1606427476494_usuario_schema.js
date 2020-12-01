@@ -11,7 +11,7 @@ class UsuarioSchema extends Schema {
       table.string('email',90).notNullable().unique()
       table.string('cpf',11).notNullable().unique()
       table
-      .integer("id_minha_contas")
+      .integer("id_minha_conta")
       .unsigned()
       .references("id")
       .inTable("minha_contas")
