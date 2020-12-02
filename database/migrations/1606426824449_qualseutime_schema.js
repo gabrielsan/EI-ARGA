@@ -4,7 +4,7 @@
 const Schema = use('Schema')
 class QualseutimeSchema extends Schema {
   up () {
-    this.create('qual_seu_time', (table) => {
+    this.create('qualseutime', (table) => {
       table.increments()
       table.string('nome',50).notNullable().unique()
       table.timestamps()

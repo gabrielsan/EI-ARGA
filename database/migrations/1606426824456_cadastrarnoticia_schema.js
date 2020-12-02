@@ -5,7 +5,7 @@ const Schema = use('Schema')
 
 class CadastrarnoticiaSchema extends Schema {
   up () {
-    this.create('cadastrar_noticias', (table) => {
+    this.create('cadastrarnoticias', (table) => {
       table.increments()
       table.string('titulo',50).notNullable().unique()
       table.datetime('data/hora',6).notNullable().unique()
