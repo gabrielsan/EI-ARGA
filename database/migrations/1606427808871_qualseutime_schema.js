@@ -2,7 +2,6 @@
 
 /** @type {import('@adonisjs/lucid/src/Schema')} */
 const Schema = use('Schema')
-
 class QualseutimeSchema extends Schema {
   up () {
     this.create('qualseutime', (table) => {
@@ -14,7 +13,7 @@ class QualseutimeSchema extends Schema {
 
   down () {
     this.drop('qualseutime')
-  }
+  }s
 }
 
 module.exports = QualseutimeSchema
