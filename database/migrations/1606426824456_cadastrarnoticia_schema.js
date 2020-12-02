@@ -8,7 +8,7 @@ class CadastrarnoticiaSchema extends Schema {
     this.create('cadastrarnoticias', (table) => {
       table.increments()
       table.string('titulo',50).notNullable().unique()
-      table.datetime('data/hora',50).notNullable().unique()
+      table.datetime('data/hora',6).notNullable().unique()
       table.string('descrição',50).notNullable().unique()
       table.string('noticia',300).notNullable().unique()
       table
