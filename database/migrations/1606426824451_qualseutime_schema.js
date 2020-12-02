@@ -13,7 +13,7 @@ class QualseutimeSchema extends Schema {
 
   down () {
     this.drop('qualseutime')
-  }s
+  }
 }
 
 module.exports = QualseutimeSchema
